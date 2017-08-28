@@ -135,7 +135,7 @@ def detect_ts(df, max_anoms=0.10, direction='pos', alpha=0.05, threshold=None, e
             num_obs_in_period = period * 7 * piecewise_median_period_weeks
             num_days_in_period = 7 * piecewise_median_period_weeks
 
-        last_date = df.timestamp.ilo[-1]
+        last_date = df.timestamp.iloc[-1]
 
         all_data = []
 
